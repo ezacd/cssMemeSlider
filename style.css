@@ -4,6 +4,7 @@ body {
 img {
     width: 1400px;
     height: 900px;
+    border-radius: 20px;
 }
 li {
     list-style: none;
@@ -11,6 +12,8 @@ li {
 }
 ul {
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .main {
@@ -38,11 +41,16 @@ ul {
     list-style: none;
 }
 
+.bot_panel {
+    display: flex;
+    margin-top: 30px;
+}
+
 .dots_container {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    right: 30px;
+    left: 30px;
 }
 
 .dots {
@@ -74,4 +82,29 @@ ul {
 
 .dots:hover {
     background-color: white;
+}
+
+.text_slider {
+    display: flex;
+    position: relative;
+    width: 1000px;
+}
+
+.text_block {
+    overflow: hidden;
+}
+
+.text_block div {
+    color: white;
+    font-size: 30px;
+    margin-right: 850px;
+}
+
+.text_block ul {
+    width: 9999px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    transition: margin-left 1000ms;
+    list-style: none;
 }
