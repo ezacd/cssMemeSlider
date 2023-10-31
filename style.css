@@ -120,5 +120,12 @@ ul {
     .dots_container {
         display: flex;
         justify-content: center;
+        position: relative;
+        left: 0;
+        margin-bottom: 30px;
+    }
+
+    .bot_panel {
+        display: block;
     }
 }

@@ -1,4 +1,9 @@
-const imgWidth = 1400;
+let imgWidth;
+if (window.innerWidth > 1024) {
+    imgWidth = 1400;
+} else {
+    imgWidth = 840;
+}
 const textWidth = 1100;
 
 const img = img_slider.querySelector('ul');
