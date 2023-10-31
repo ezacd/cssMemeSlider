@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(37, 40, 42);
+}
+img {
+    width: 1400px;
+    height: 900px;
+}
+li {
+    list-style: none;
+    padding: 0; margin: 0;
+}
+ul {
+    display: flex;
+}
+
+.main {
+    width: 1400px;
+    height: 1400px;
+    padding: 50px;
+}
+
+.img_slider {
+    display: flex;
+    position: relative;
+    width: 1400px;
+}
+
+.mems_block {
+    overflow: hidden;
+}
+
+.mems_block ul {
+    width: 9999px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    transition: margin-left 1000ms;
+    list-style: none;
+}
+
+.dots_container {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 30px;
+}
+
+.dots {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background: rgb(113, 171, 255);
+    position: relative;
+    left: -20px;
+    box-sizing: border-box;
+}
+
+.dot1:checked + label {
+    background: rgb(37, 40, 42);
+    border: 4px solid rgb(113, 171, 255);
+}
+.dot2:checked + label {
+    background: rgb(37, 40, 42);
+    border: 4px solid rgb(113, 171, 255);
+}
+.dot3:checked + label {
+    background: rgb(37, 40, 42);
+    border: 4px solid rgb(113, 171, 255);
+}
+.dot4:checked + label {
+    background: rgb(37, 40, 42);
+    border: 4px solid rgb(113, 171, 255);
+}
+
+.dots:hover {
+    background-color: white;
+}
