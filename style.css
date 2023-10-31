@@ -17,8 +17,6 @@ ul {
 }
 
 .main {
-    width: 1400px;
-    height: 1400px;
     padding: 50px;
 }
 
@@ -107,4 +105,20 @@ ul {
     padding: 0;
     transition: margin-left 1000ms;
     list-style: none;
+}
+
+@media screen and (width < 1024px) {
+    img {
+        width: 840px;
+        height: 540px;
+    }
+
+    .img_slider {
+        width: 840px;
+    }
+
+    .dots_container {
+        display: flex;
+        justify-content: center;
+    }
 }
